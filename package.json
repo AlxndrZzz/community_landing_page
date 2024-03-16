@@ -1,0 +1,22 @@
+{
+  "name": "landing_page_community",
+  "version": "1.0.0",
+  "description": "landing page",
+  "source": "index.html",
+  "scripts": {
+    "sass:watch": "sass --style=expanded --watch styles:dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlxndrZzz/community_landing_page.git"
+  },
+  "author": "AlxndrZzz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlxndrZzz/community_landing_page/issues"
+  },
+  "homepage": "https://github.com/AlxndrZzz/community_landing_page#readme",
+  "devDependencies": {
+    "sass": "^1.72.0"
+  }
+}
