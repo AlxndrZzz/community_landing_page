@@ -1,6 +1,63 @@
 @use 'variables' as v;
 @use 'importer';
+@use 'mixins' as m;
 
 body {
-    
+    background-color: v.$color_bg;
+
+    .header {
+        width: 100%;
+        padding: 40px 0 0 0;
+
+        &-wrapper {
+            max-width: 100%;
+            height: 40px;
+            // display: flex;
+            // justify-content: space-between;
+            // align-items: center;
+            @include m.d-flex(space-between, center, row);
+        }
+
+        &__nav-list {
+            // display: flex;
+            // justify-content: end;
+            // align-items: center;
+            // flex-direction: row;
+            // gap: 40px;
+            @include m.d-flex(end, center, row, 0, 40px);
+        }
+
+        &__logo {
+            // display: flex;
+            // justify-content: start;
+            // align-items: center;
+            // gap: 8px;
+            @include m.d-flex(start, center, row, 0, 8px);
+        }
+
+        &__logo-link-icon {
+            width: 68px;
+            height: 41px;
+        }
+
+        &__logo-title {
+            // font-family: v.$font-family_logo;
+            // font-size: 32px;
+            // font-weight: 700;
+            // color: v.$color_black;
+            @include m.font(v.$font-family_logo, 32px, 700, v.$color_black);
+        }
+
+        &__nav-list-item-link {
+            // font-family: v.$font-family_nav-link;
+            // font-size: 18px;
+            // font-weight: 500;
+            // color: v.$color_black;
+            @include m.font(v.$font-family_nav-link, 18px, 500, v.$color_black);
+        }
+
+        &__nav-list-item-link:hover {
+            color: v.$color_green;
+        }
+    }
 }

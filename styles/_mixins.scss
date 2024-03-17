@@ -1,0 +1,18 @@
+@use 'variables' as v;
+@use 'importer';
+
+@mixin d-flex($jusify: start, $align: center, $direct: row, $rgap: 0, $cgap: 0) {
+    display: flex;
+    justify-content: $jusify;
+    align-items: $align;
+    flex-direction: $direct;
+    row-gap: $rgap;
+    column-gap: $cgap;
+}
+
+@mixin font($family: Arial, $size: 18px, $weight: 400, $color: white) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
