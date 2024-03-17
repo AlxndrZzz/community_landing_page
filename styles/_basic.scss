@@ -6,3 +6,31 @@ body {
     font-family: Ruda;
     margin: 0;
 }
+
+.container {
+    max-width: 1330px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: unset;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
